@@ -1,0 +1,1037 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 800px;
+    background-image: url(img/slider.jpg);
+    padding-left: 98px;
+}
+
+.logo {
+    margin-top: 63px;
+}
+
+
+/*=======================Меню=========================*/
+
+.menu {
+    float: right;
+    margin-right: 150px;
+    margin-top: 67px;
+}
+
+.menu li {
+    float: left;
+    list-style-type: none;
+    transition: text-shadow .3s;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 48px;
+    display: inblock;
+    padding: 0 20px;
+}
+
+.menu li a:hover {
+    color: #212121;
+    line-height: 48px;
+    border-bottom: 2px solid #212121;
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+}
+
+
+/*===============Текст с кнопкой в блоке==============*/
+
+.text {
+    width: 458px;
+    margin-top: 288px;
+}
+
+.text h3 {
+    color: #43a047;
+    font-size: 18px;
+    font-weight: 700;
+    /*line-height: 48px;*/
+    margin-bottom: 22px;
+}
+
+.text h1 {
+    color: #212121;
+    font-size: 58px;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+}
+
+.text p {
+    color: #6c6c6c;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.text a {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text a:hover {
+    background: #ffffff url(img/arrow.png)no-repeat 173px 16px;
+}
+
+
+/*Первый блок после шапки*/
+
+.first {
+    height: 609px;
+    padding-top: 1px;
+}
+
+
+/*==================Featured  New===========================*/
+
+.first ul {
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.first li {
+    list-style-type: none;
+    float: left;
+}
+
+.first li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 2px solid #6c6c6c;
+}
+
+.first li a:focus {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 5px solid #212121;
+}
+
+
+/*==============================================================*/
+
+
+/*=====================Ссылка explorer all>=====================*/
+
+#explore_all {
+    float: right;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 138px;
+    margin-right: 118px;
+    display: block;
+    background-color: #ffffff;
+    text-decoration: none;
+    width: 180px;
+    text-align: left;
+}
+
+#explore_all:hover {
+    background: #ffffff url(img/arrow.png)no-repeat 140px 5px;
+}
+
+
+/*===============================================================*/
+
+
+/*===================Первый блок со стульями=====================*/
+
+.block_one {
+    width: 1175px;
+    height: 270px;
+    clear: both;
+    margin-top: 219px;
+    margin-left: 100px;
+}
+
+.tovar {
+    float: left;
+    margin-right: 30px;
+    width: 270px;
+    height: 270px;
+}
+
+.tovar_active {
+    display: none;
+}
+
+.tovar:hover .tovar_active {
+    display: block;
+    float: left;
+    border-width: 1px;
+    margin-right: 30px;
+    border-color: #9c9c9c;
+    border-style: solid;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 268px;
+    height: 268px;
+}
+
+
+/*===Блок с текстом внутри каждого блока с картинкой===*/
+
+.tovar_active a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    margin-top: 62px;
+    margin-left: 111px;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+.tovar_active a:hover {
+    background: #ffffff url(img/arrow2.png)no-repeat 18px 14px;
+}
+
+.tovar_active h3 {
+    color: #212121;
+    font-size: 21.91px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    transform: scalex(1.0041);
+}
+
+.tovar_active p {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 23px;
+    transform: scaleX(1.0041);
+}
+
+
+/*===============================================================*/
+
+
+/*====================2 крупных блока с текстом==================*/
+
+.second {
+    height: 683px;
+    padding-top: 1px;
+}
+
+.second_a {
+    float: left;
+    width: 683px;
+    height: 683px;
+}
+
+.text_2 {
+    width: 458px;
+    margin-top: 228px;
+    margin-left: 52px;
+}
+
+.text_2 h3 {
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.text_2 h1 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.text_2 p {
+    color: #6c6c6c;
+    font-size: 13.99px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    transform: scaleY(1.0022);
+    margin-bottom: 34px;
+}
+
+.text_2 a {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scaleY(1.0022);
+}
+
+.text_2 a:hover {
+    background: #ffffff url(img/arrow.png)no-repeat 173px 16px;
+}
+
+
+/*===============================================================*/
+
+
+/*====================Второй блок с товарами=====================*/
+
+.third {
+    height: 1108px;
+    padding-left: 100px;
+    padding-top: 1px;
+}
+
+.third h1 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 119px;
+    float: left;
+}
+
+.block_three {
+    clear: both;
+    width: 1170px;
+    height: 770px;
+    margin-top: 218px;
+}
+
+.tovar_2 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.tovar_2 a {
+    float: left;
+    width: 370px;
+    height: 370px;
+}
+
+
+/*===============================================================*/
+
+
+/*========================Второй слайдер=========================*/
+
+.fours {
+    height: 800px;
+    background: url(img/slider2.jpg);
+    padding-top: 1px;
+}
+
+.text_4 {
+    width: 458px;
+    margin-top: 228px;
+    margin-left: 98px;
+}
+
+.text_4 h3 {
+    color: #e53935;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.text_4 h1 {
+    color: #212121;
+    font-size: 58px;
+    font-weight: 100;
+    line-height: 72px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.text_4 p {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.text_4 a {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text_4 a:hover {
+    background: #ffffff url(img/arrow.png)no-repeat 173px 16px;
+}
+
+
+/*===============================================================*/
+
+
+/*===================Третий блок с товарами======================*/
+
+.fifth {
+    height: 810px;
+    padding-top: 1px;
+}
+
+.block_five {
+    width: 1170px;
+    height: 570px;
+    margin: 120px auto;
+}
+
+.fifth_a {
+    float: left;
+    width: 570px;
+    height: 570px;
+}
+
+.tovar_3 a {
+    float: left;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+}
+
+.text_5 {
+    width: 332px;
+    margin-top: 186px;
+    margin-left: 30px;
+}
+
+.text_5 h3 {
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.text_5 h1 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.text_5 p {
+    color: #6c6c6c;
+    font-size: 13.99px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    transform: scaleY(1.0022);
+    margin-bottom: 34px;
+}
+
+.text_5 a {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scaleY(1.0022);
+}
+
+.text_5 a:hover {
+    background: #ffffff url(img/arrow.png)no-repeat 173px 16px;
+}
+
+
+/*===============================================================*/
+
+
+/*===============Блок с мобильными приложениями==================*/
+
+.sixth {
+    height: 516px;
+    background: url(img/back-img.jpg);
+    padding-top: 1px;
+}
+
+.text_6 {
+    width: 413px;
+    margin-top: 125px;
+    margin-left: 99px;
+}
+
+.text_6 h3 {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.text_6 h1 {
+    color: #212121;
+    font-size: 54px;
+    font-weight: 100;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.text_6 p {
+    color: #6c6c6c;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 33px;
+}
+
+.text_6 a {
+    float: left;
+    margin-right: 10px;
+}
+
+
+/*===============================================================*/
+
+
+/*===========================Footer==============================*/
+
+.footer {
+    height: 384px;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.text_footer {
+    height: 150px;
+    float: left;
+    margin-right: 76px
+}
+
+.text_footer ul {
+    margin-top: 25px;
+    margin-right: 110px;
+    float: left;
+}
+
+.text_footer li {
+    list-style-type: none;
+}
+
+.text_footer li a {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.text_footer h3 {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.text_footer p {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.text_footer input {
+    border-width: 1px;
+    border-color: #d9dee1;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 301px;
+    height: 46px;
+    margin-top: 10px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 20px;
+    float: left;
+    z-index: 1;
+}
+
+.text_footer #submit {
+    width: 46px;
+    height: 48px;
+    background: #ffffff url(img/airplane.png)no-repeat 10px 15px;
+    float: right;
+    position: absolute;
+    border-left: none;
+}
+
+#copyright {
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#orders {
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#social {
+    position: absolute;
+    bottom: 40px;
+    right: 620px;
+    list-style-type: none;
+}
+
+#social li {
+    float: left;
+    margin-right: 3px;
+}
+
+#social li a {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+
+/*===============================================================*/
+
+
+/*====================================Контакты=(contact.html)==========================*/
+
+.header_other {
+    height: 360px;
+    background-color: #f5f5f5;
+    padding-left: 98px;
+}
+
+.header_other h1 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    text-align: left;
+    margin-top: 171px;
+}
+
+
+/*===============================================================*/
+
+
+/*=====================Адреса (средняя часть)====================*/
+
+.content {
+    height: 563px;
+}
+
+.content ul {
+    float: left;
+    list-style-type: none;
+    margin-top: 70px;
+    margin-left: 83px;
+}
+
+.content ul li {
+    width: 370px;
+    height: 370px;
+    outline: 1px solid black;
+    float: left;
+    margin: 15px;
+}
+
+.content #adress {
+    text-align: center;
+    line-height: 20.082px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.content #adress h3 {
+    color: #212121;
+    font-size: 21.91px;
+    font-weight: 700;
+    line-height: 30px;
+    transform: scaleX(1.0041);
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.content #adress h6 {
+    color: #6c6c6c;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.content #adress h5 {
+    color: #212121;
+    font-weight: 700;
+}
+
+.content #adress p {
+    color: #6c6c6c;
+    font-weight: 300;
+    transform: scaleX(1.0041);
+}
+
+
+/*===============================================================*/
+
+
+/*====================================Каталог=(products.html)==========================*/
+
+.content_cat {
+    height: 156px;
+    position: relative;
+}
+
+
+.tovar_catalog1 li {
+    width: 370px;
+    height: 370px;
+    list-style-type: none;
+    float: left;
+    margin: 15px;
+}
+
+.tovar_catalog1 {
+    height: 1600px;
+    position: relative;
+
+    padding-bottom: 270px;
+    padding-left: 85px;
+}
+
+
+.tovar_catalog1 #strelka img {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tovar_catalog1 #strelka img:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+.first_cat li {
+    list-style-type: none;
+    float: left;
+    margin-top: 20px
+}
+
+.first_cat li a {
+    text-decoration: none;
+    float: left;
+    padding: 20px;
+    color: #6c6c6c;
+    font-weight: 700;
+    border-bottom: 2px solid #6c6c6c;
+    font-size: 18px;
+}
+
+.first_cat li a:focus {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 5px solid #212121;
+}
+
+.clr {
+    clear: both
+}
+
+/*=====================================================================*/
+/*========================Product_detailed=============================*/
+.header_detailed {
+    height: 120px;
+
+    padding-bottom: 20px;
+    padding-left: 98px;
+}
+
+/*==============================================================*/
+/*=============================Меню=============================*/
+.menu_det {
+    height: 70px;
+    background: #f4f4f4;
+}
+
+.menu_det ul {
+    margin-left: 360px;
+    line-height: 30px;
+}
+
+.menu_det li {
+    list-style-type: none;
+    float: left;
+    padding: 20px;
+}
+
+.menu_det li a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 17.99px;
+    font-weight: 700;
+    text-align: center;
+    transform: scaleY(1.0006);
+}
+
+.menu_det li a:focus {
+    color: black;
+    font-size: 17.99px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*==============================================================*/
+/*=============================1 блок===========================*/
+/*Альбом с миниатюрами*/
+.album_foto {
+    height: 968px;
+    width: 724px;
+    float: left;
+}
+.slider{
+	width: 570px;
+	position: relative;
+	padding-top: 570px;
+	margin: 100px auto;
+}
+
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	margin: 18px 0 0 10px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;	
+	opacity: 0.6;
+    
+}
+
+.slider label img{
+	display: block;
+}
+
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+/*Правая сторона с текстом*/
+.album_text {
+    height: 968px;
+    width: 510px;
+    float: right;
+    text-align: center;
+    display: inline-block;
+    margin-right: 130px;
+}
+
+.album_text h3 {
+    color: #212121;
+    font-size: 35.98px;
+    font-weight: 700;
+    text-align: center;
+    transform: scaleY(1.0005);
+    margin-top: 120px;
+}
+
+.album_text h4 {
+    color: #e53935;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    transform: scaleY(1.0005);
+    text-transform: uppercase;
+}
+
+.album_text h2 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.album_text p {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    transform: scaleY(1.0005);
+    margin-top: 50px;
+}
+
+.album_text a {
+    display: block;
+    background-color: #f44336;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 510px;
+    height: 71px;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 75px;
+    color: #212121;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    transform: scaleY(1.0005);
+    margin-top: 30px;
+}
+
+.album_text a:hover {
+    background: #f44336 url(img/arrow_white.png)no-repeat 335px 23px;
+}
+
+/*==============================================================*/
+/*=============================2 блок===========================*/
+.relat_product {
+    height: 561px;
+
+    clear: both;
+    padding-bottom: 60px;
+}
+
+.relat_product #explore_all {
+    margin-top: -100px;
+}
+
+.relat_product h1 {
+    margin-top: 1px;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+}
+
