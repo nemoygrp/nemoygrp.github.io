@@ -151,6 +151,13 @@ body {
     text-align: left;
     border-bottom: 5px solid #212121;
 }
+.first li a:hover {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 5px solid #212121;
+}
 
 
 /*==============================================================*/
@@ -837,7 +844,14 @@ body {
     font-size: 18px;
 }
 
-.first_cat li a:focus {
+.first_cat li a:focus{
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 5px solid #212121;
+}
+.first_cat li a:hover{
     color: #212121;
     font-size: 18px;
     font-weight: 700;
@@ -886,6 +900,12 @@ body {
 }
 
 .menu_det li a:focus {
+    color: black;
+    font-size: 17.99px;
+    font-weight: 700;
+    text-align: center;
+}
+.menu_det li a:hover {
     color: black;
     font-size: 17.99px;
     font-weight: 700;
