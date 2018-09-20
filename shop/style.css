@@ -24,8 +24,38 @@ body {
 .logo {
     margin-top: 63px;
 }
+/*======================Слайдер=======================*/
+
+.slider_main{
+    float: left;
+    margin-left: 525px;
+    margin-top: 80px;
+    
+ 
+}
+
+.slider_main li {
+background: #ccc;
+border-radius: 50%;    
+display: inline-block;
+height: 30px;
+width: 30px;
+list-style-type: none;
+    margin-top: 20px;
+    margin-right: 10px
 
 
+
+}
+.slider_main li:hover {
+background: black;
+width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+/*====================================================*/
 /*=======================Меню=========================*/
 
 .menu {
