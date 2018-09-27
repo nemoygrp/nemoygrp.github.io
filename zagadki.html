@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML/CSS</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		var score = 0;
+		function checkAnswer(inputId, answers){
+			var userAnswer = document.getElementById(inputId).value
+			userAnswer = userAnswer.toLowerCase();
+			for(var i = 0; i < answers.length; i++){
+				if(userAnswer == answers[i]){
+					score++;
+					break;
+				}
+			}
+		}
+		function checkAnswers(){
+			checkAnswer("userAnswer1",["на коленях","на коленках"]);
+			checkAnswer("userAnswer2",["был ясный день","был день"]);
+			checkAnswer("userAnswer3",["5 минут","5","пять","пять минут"]);
+			checkAnswer("userAnswer4",["любовь"]);
+			
+			document.getElementById("result").innerHTML = ("Вы отгадали " + score + " загадок!!!");
+		}
+		function cancel(){
+			document.getElementById("result").style.display = "none";
+			document.getElementById("userAnswer1").value = "";
+			document.getElementById("userAnswer2").value = "";
+			document.getElementById("userAnswer3").value = "";
+			document.getElementById("userAnswer4").value = "";
+		}
+
+	</script>
+</head>
+<body>
+	<div class="back">
+		<div class="logo">
+			<img src="img/by_NEMOY.png">
+		</div>
+
+		<img  src="img/fon_main.jpg">
+	</div>
+	<div class="container" id="contain">
+		<div class="header">
+			<ul class="menu">
+				<li><a href="index.html#contain">HOME</a> </li>
+				<li><a href="verstka.html#contain">HTML/CSS</a></li>
+				<li><a style="text-shadow: 0 0 .65px #870D04, 0 0 .65px #870D04" href="programs.html#contain">JScript/PHP</a></li>
+				<li><a href="#contain">OTHER</a></li>
+				<li><a href="about.html#contain">ABOUT ME</a> </li>
+			</ul>
+			<ul style="margin-left: 25%" class="menu">
+				<li><a style="text-shadow: 0 0 .65px #870D04, 0 0 .65px #870D04" href="zagadki.html#contain">Игра "Загадки"</a> </li>
+				<li><a href="ugadayka.html#contain">Игра "Угадай число"</a></li>
+				<li><a href="gen_pass.html#contain">Генератор паролей</a></li>
+			</ul>
+		</div>
+		<div class="content" style="text-align: center;">
+			<h3 style="color: #440e0e;">Отгадайте несколько загадок!</h3>
+			<div class="box">
+				<form>
+				<p>Сидит девушка, а вы не можете сесть на её место, даже если она встанет и уйдёт. Где она сидит?</p>
+				<input type="text" placeholder="Ваш ответ" id="userAnswer1">
+				<p>Мужчина вёл большой грузовик. Огни на машине не были зажжены. Луны тоже не было. Женщина стала переходить дорогу перед машиной. Как удалось водителю разглядеть её?</p>
+				<input type="text" placeholder="Ваш ответ" id="userAnswer2">
+				<p>Если пять кошек ловят пять мышей за пять минут, то сколько времени нужно 	одной кошке, чтобы поймать одну мышку?</p>
+				<input type="text" placeholder="Ваш ответ" id="userAnswer3">
+				<p>Как известно, все русские женские имена оканчиваются либо на букву «а», либо на букву «я»: Анна, Мария, Ирина, Наталья, Ольга и т.д. Однако есть одно-единственное женское имя, которое  оканчивается на другую букву. Назовите его.</p>
+				<br>
+				<input type="text" placeholder="Ваш ответ" id="userAnswer4">
+				<a class="zagad_but" style="background: url(img/answer.jpg)" href="#contain" onclick="checkAnswers(); return false;"></a>
+				<a class="zagad_but" style="background: url(img/cancel.jpg); float: left;margin-left: 30px; margin-right: 0px;" href="zagadki.html#contain" onclick="cancel();return false"></a>
+				</form>
+				<h2 id="result" style="margin-top: 70px; color:#870D04"></h2>
+			</div>
+		</div> 
+		<div class="clr" style="height: 100px;"></div>
+		<div class="footer">
+			<span>Все права защищены &copy ООО "NemoyGroup"</span>
+		</div>
+	</div>
+
+
+</body>
+</html>
