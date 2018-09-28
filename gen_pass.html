@@ -5,32 +5,30 @@
 	<title>HTML/CSS</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript">
-		var score = 0;
-		function checkAnswer(inputId, answers){
-			var userAnswer = document.getElementById(inputId).value
-			userAnswer = userAnswer.toLowerCase();
-			for(var i = 0; i < answers.length; i++){
-				if(userAnswer == answers[i]){
-					score++;
-					break;
-				}
-			}
-		}
-		function checkAnswers(){
-			checkAnswer("userAnswer1",["на коленях","на коленках"]);
-			checkAnswer("userAnswer2",["был ясный день","был день"]);
-			checkAnswer("userAnswer3",["5 минут","5","пять","пять минут"]);
-			checkAnswer("userAnswer4",["любовь"]);
-			
-			document.getElementById("result").innerHTML = ("Вы отгадали " + score + " загадок!!!");
-		}
-		function cancel(){
-			document.getElementById("result").style.display = "none";
-			document.getElementById("userAnswer1").value = "";
-			document.getElementById("userAnswer2").value = "";
-			document.getElementById("userAnswer3").value = "";
-			document.getElementById("userAnswer4").value = "";
-		}
+
+
+function generate(){
+	var pass = "";
+    var all = "";
+	if(document.getElementById('lower').checked){
+		all = all + "abcdefghijklmnopqrstuvwxyz";
+	}if(document.getElementById('upper').checked){
+		all = all + "ABCDEFGHIJKLMNOPQRSTYVWXYZ"
+	}if (document.getElementById('num').checked){
+		all = all + "1234567890"
+	}
+	var length = document.getElementById("length").value;
+	
+	for (var i = 0; i < length; i++) 
+    {
+        pass += all.charAt(Math.floor(Math.random() * all.length));
+    }
+    document.getElementById("ready").innerHTML = "";
+    document.getElementById("ready").innerHTML = pass;
+    document.getElementById("ready").style.color = "#440e0e";
+
+}
+
 
 	</script>
 </head>
@@ -58,6 +56,21 @@
 			</ul>
 		</div>
 		<div class="content" style="height: 600px">
+
+			<div style="text-align:center;width: 90%;" class="box">
+				<h3>Данный генератор сделает для вас пароль!</h3>
+				<p>Укажите желаемую длину</p>
+				<input type="text" id ="length">
+				<p>Укажите из каких символов он должен состоять</p>
+				<input type="checkbox" id ="lower">
+				<p style="text-align: left;">Латинские в нижнем регистре</p>
+				<input type="checkbox" id ="upper">
+				<p style="text-align: left;">Латинские в верхнем регистре</p>
+				<input type="checkbox" id ="num">
+				<p style="text-align: left;">Цифры</p>
+				<p id="ready">Ваш пароль</p>
+				<a id="generate" style="background: url(img/generate.jpg)" href="#contain" onclick= "generate();return false"></a>
+			</div>
 
 			</div> 
 			<div class="clr" style="height: 200px;"></div>
