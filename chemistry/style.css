@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela&subset=cyrillic');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gabriela', serif;
+    background-image: url("img/fon_main2.jpg");
+
+}
+form{
+    display: flex;
+}
+
+.container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+   /* background-color: #d2d2d2;*/
+
+}
+
+.header {
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+   /* background-color: #f8fdff;*/
+    background-image: url("img/header_vhod.jpg");
+    box-shadow: 2px 5px 5px 1px #666;
+    border-radius: 20px;
+
+}
+.header h3{
+    margin-top: 2rem;
+    color: #f9fffb;
+}
+
+.clr_up {
+    height: 1em;
+    opacity: 1;
+}
+
+.lesson {
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 2px 0 10px 3px #666;
+    margin-bottom: 3em;
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    opacity: 1;
+    color: #495057;
+    border-radius: 20px;
+}
+
+#lesson_0{
+    display: none;
+}
+
+.menu {
+margin-right:10px;
+    float: right;
+}
+
+.menu li {
+    list-style-type: none;
+    float:left;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 48px;
+    display: inblock;
+    padding: 5px 15px;
+    margin-top: 2px;
+
+}
+.menu li a:hover {
+    color: #ffffff;
+    line-height: 48px;
+    text-shadow: 0 0 .65px #FFFFFF, 0 0 .65px #FFFFFF;
+    border-top: 2px solid #FFFFFF;
+    margin-top: 0px;
+}
+.answers {
+    padding-left: 20px;
+}
+
+
+.test p{
+    font-size: 11px;
+}
+.statistic textarea{
+    display: none;
+
+}
+.statistic button{
+    background-color:#e9ecef;
+    border-color: #ced4da;
+    color:#495057;
+    box-shadow: 2px 0 10px 3px #666;
+
+}
+.statistic button:hover{
+        background-color:#adadad;
+    color:#e9ecef;
+    border-color: #ced4da;
+    }
+
+.final textarea{
+    display: none;
+
+}
+.final button{
+    margin-top: 30px;
+    background-color:#e9ecef;
+    border-color: #ced4da;
+    color:#495057;
+    box-shadow: 2px 0 10px 3px #666;
+
+}
+.final button:hover{
+        background-color:#adadad;
+    color:#e9ecef;
+    border-color: #ced4da;
+    }
+
+/*===============================================================*/
+/*======================Форма Входа==============================*/
+.autentic{
+    box-shadow: 2px 0 10px 3px #666;
+    background-color: #f8fdff;
+    height: 15em;
+    padding-top: 4em;
+    border-radius: 20px;
+}
+.static{
+        box-shadow: 2px 0 10px 3px #666;
+    background-color: #f8fdff;
+    height: 15em;
+    padding-top: 1.5em;
+    border-radius: 20px;
+}
+.forma{
+    text-align: center;
+}
+.forma h6{
+    color: #495057;
+    margin-bottom: 2em;
+}
+.forma h5{
+    color: #495057;
+    margin-bottom: 2em;
+    }
+
+.forma .btn{
+
+    background-color:#e9ecef;
+    border-color: #ced4da;
+    color:#495057;   
+}
+.forma .btn:hover{
+    background-color:#adadad;
+    color:#e9ecef;
+    }
+.forma .btn-primary:active,.btn:active{
+    background-color:#adadad;
+    color:#e9ecef;
+    border-color: #ced4da;
+    }
+.forma .btn-primary:focus,.btn:focus{
+    box-shadow: 0 0 0 0.2rem #ced4da;
+    }
+.input-group{
+    margin-left: 3em;
+}
