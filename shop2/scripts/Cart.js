@@ -136,7 +136,7 @@ class Cart {
                 this.countGoods += +($(subCount).text());
             }
             if (this.countGoods === 0) {
-                $('.cart-box-items').append($clear);
+               //$('.cart-box-items').append($clear);
                 $(this.container).append($clear);
                 $('.img_cart_link__quantity').css({'opacity': '0'});
             } else {
@@ -212,6 +212,7 @@ class Cart {
     }
     clearCart(){
         $(`div.cart-box-item`).remove();
+        $(`div.clear_item`).remove();
         $(`div.item-cart`).remove();
         this.cartItems.splice(0,$(this.cartItems).length);
         this._renderSum();
