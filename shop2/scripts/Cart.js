@@ -130,12 +130,14 @@ class Cart {
         }
         if (this.countGoods === 0) {
             $(this.container).append($clear);
+            console.log(this.countGoods);
             let $countAllBox = $('.cart-box-items').find('.cart-box-item__text_price_quantity');
             for (let subCount of $countAllBox) {
                 this.countGoods += +($(subCount).text());
             }
             if (this.countGoods === 0) {
                 $('.cart-box-items').append($clear);
+                $(this.container).append($clear);
                 $('.img_cart_link__quantity').css({'opacity': '0'});
             } else {
                 $('.img_cart_link__quantity').css({'opacity': '1'});
@@ -145,7 +147,6 @@ class Cart {
             $('.img_cart_link__quantity').css({'opacity': '1'});
             $('.img_cart_link__quantity').text(this.countGoods);
         }
-        console.log(this.amount)
     }
     renderTotal(idProduct, quantity){
         let $find = this.cartItems.find(product => product.id_product === idProduct);
