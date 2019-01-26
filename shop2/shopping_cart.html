@@ -48,42 +48,14 @@
         <div class="header_right">
 
             <div class="img_cart_link"><img class="img_cart" src="img/cart.svg" alt="photo">
+                <div class="img_cart_link__quantity"></div>
                 <div class="cart-box">
-                    <div class="cart-box-item">
-                        <div class="cart-box-item__img">
-                            <img src="img/drop_cart-1.jpg" alt="photo">
-                        </div>
-                        <div class="cart-box-item__text">
-                            <a href="single_page.html" class="cart-box-item__text_name">Rebox Zane</a>
-                            <p class="cart-box-item__text_star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </p>
-                            <p class="cart-box-item__text_price">1  x   $250</p>
-                        </div>
-                        <div class="cart-box-item__cancel"><a href="#" class="fa fa-times-circle" aria-hidden="true"></a></div>
+                    <div class="cart-box-items">
                     </div>
-                    <div class="cart-box-item">
-                        <div class="cart-box-item__img">
-                            <img src="img/drop_cart-2.jpg" alt="photo">
-                        </div>
-                        <div class="cart-box-item__text">
-                            <a href="single_page.html" class="cart-box-item__text_name">Rebox Zane</a>
-                            <p class="cart-box-item__text_star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </p>
-                            <p class="cart-box-item__text_price">1  x   $250</p>
-                        </div>
-                        <div class="cart-box-item__cancel"><a href="#" class="fa fa-times-circle" aria-hidden="true"></a></div>
+                    <div class="cart-box-item__total">
+                        <div class="cart-box-item__total_name">Total</div>
+                        <div class="cart-box-item__total_amount">$500</div>
                     </div>
-                    <div class="total"></div>
                     <a href="checkout.html" class="button cart-box__button cart-box__button_pink ">Checkout</a>
                     <a href="shopping_cart.html" class="cart_button cart-box__button">Go to cart</a>
                 </div>
@@ -210,63 +182,66 @@
             <li>ACTION</li>
         </ul>
     </div>
-    <div class="item-cart">
-        <div class="item-cart__card">
-            <img src="img/cart_1.jpg" alt="foto">
-            <div class="item-cart__card-text">
-                <a href="single_page.html" class="item-cart__card-name">Mango People T-shirt</a>
-                <p class="item-cart__card-options">Color:<span class="item-cart__card-value">Red</span></p>
-                <p class="item-cart__card-options">Size:<span class="item-cart__card-value">Xll</span></p>
+    <div class="cart-content__body">
+     <!--  <div class="item-cart">
+            <div class="item-cart__card">
+                <img src="img/cart_1.jpg" alt="foto">
+                <div class="item-cart__card-text">
+                    <a href="single_page.html" class="item-cart__card-name">Mango People T-shirt</a>
+                    <p class="item-cart__card-options">Color:<span class="item-cart__card-value">Red</span></p>
+                    <p class="item-cart__card-options">Size:<span class="item-cart__card-value">Xll</span></p>
+                </div>
             </div>
+            <ul class="item-cart__right">
+                <li class="item-cart__list">$150</li>
+                <li class="item-cart__list"><input class="item-cart__list_input" type="text" value="2" title="quantity"></li>
+                <li class="item-cart__list">FREE</li>
+                <li class="item-cart__list">$300</li>
+                <li class="item-cart__list item-cart__list_action"><a href="#" class="fa fa-times-circle " aria-hidden="true"></a>
+                </li>
+            </ul>
         </div>
-        <ul class="item-cart__right">
-            <li class="item-cart__list">$150</li>
-            <li class="item-cart__list"><input class="item-cart__list_input" type="text" value="2" title="quantity"></li>
-            <li class="item-cart__list">FREE</li>
-            <li class="item-cart__list">$300</li>
-            <li class="item-cart__list item-cart__list_action"><a href="#" class="fa fa-times-circle " aria-hidden="true"></a>
-            </li>
-        </ul>
-    </div>
-    <div class="item-cart">
-        <div class="item-cart__card">
-            <img src="img/cart_2.jpg" alt="foto">
-            <div class="item-cart__card-text">
-                <a href="single_page.html" class="item-cart__card-name">Mango People T-shirt</a>
-                <p class="item-cart__card-options">Color:<span class="item-cart__card-value">Red</span></p>
-                <p class="item-cart__card-options">Size:<span class="item-cart__card-value">Xll</span></p>
+        <div class="item-cart">
+            <div class="item-cart__card">
+                <img src="img/cart_2.jpg" alt="foto">
+                <div class="item-cart__card-text">
+                    <a href="single_page.html" class="item-cart__card-name">Mango People T-shirt</a>
+                    <p class="item-cart__card-options">Color:<span class="item-cart__card-value">Red</span></p>
+                    <p class="item-cart__card-options">Size:<span class="item-cart__card-value">Xll</span></p>
+                </div>
             </div>
+            <ul class="item-cart__right">
+                <li class="item-cart__list">$150</li>
+                <li class="item-cart__list"><input class="item-cart__list_input" type="text" value="2" title="quantity"></li>
+                <li class="item-cart__list">FREE</li>
+                <li class="item-cart__list">$300</li>
+                <li class="item-cart__list item-cart__list_action"><a href="#"  class="fa fa-times-circle" aria-hidden="true"></a>
+                </li>
+            </ul>
         </div>
-        <ul class="item-cart__right">
-            <li class="item-cart__list">$150</li>
-            <li class="item-cart__list"><input class="item-cart__list_input" type="text" value="2" title="quantity"></li>
-            <li class="item-cart__list">FREE</li>
-            <li class="item-cart__list">$300</li>
-            <li class="item-cart__list item-cart__list_action"><a href="#"  class="fa fa-times-circle" aria-hidden="true"></a>
-            </li>
-        </ul>
-    </div>
-    <div class="item-cart">
-        <div class="item-cart__card">
-            <img src="img/cart_3.jpg" alt="foto">
-            <div class="item-cart__card-text">
-                <a href="single_page.html" class="item-cart__card-name">Mango People T-shirt</a>
-                <p class="item-cart__card-options">Color:<span class="item-cart__card-value">Red</span></p>
-                <p class="item-cart__card-options">Size:<span class="item-cart__card-value">Xll</span></p>
+        <div class="item-cart">
+            <div class="item-cart__card">
+                <img src="img/cart_3.jpg" alt="foto">
+                <div class="item-cart__card-text">
+                    <a href="single_page.html" class="item-cart__card-name">Mango People T-shirt</a>
+                    <p class="item-cart__card-options">Color:<span class="item-cart__card-value">Red</span></p>
+                    <p class="item-cart__card-options">Size:<span class="item-cart__card-value">Xll</span></p>
+                </div>
             </div>
-        </div>
-        <ul class="item-cart__right">
-            <li class="item-cart__list">$150</li>
-            <li class="item-cart__list"><input class="item-cart__list_input" type="text" value="2" title="quantity"></li>
-            <li class="item-cart__list">FREE</li>
-            <li class="item-cart__list">$300</li>
-            <li class="item-cart__list item-cart__list_action"><a href="#" class="fa fa-times-circle" aria-hidden="true"></a>
-            </li>
-        </ul>
+            <ul class="item-cart__right">
+                <li class="item-cart__list">$150</li>
+                <li class="item-cart__list"><input class="item-cart__list_input" type="text" value="2" title="quantity"></li>
+                <li class="item-cart__list">FREE</li>
+                <li class="item-cart__list">$300</li>
+                <li class="item-cart__list item-cart__list_action"><a href="#" class="fa fa-times-circle" aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div> -->
     </div>
+
     <div class="cart-content__control">
-        <a href="#" class="cart_button cart-content__control_button">cLEAR SHOPPING CART</a>
-        <a href="#" class="cart_button cart-content__control_button">cONTINUE sHOPPING</a>
+        <a href="#" class="cart_button cart-content__control_button clear_cart">cLEAR SHOPPING CART</a>
+        <a href="product.html" class="cart_button cart-content__control_button">cONTINUE sHOPPING</a>
     </div>
 </div>
 <div class="container shipping-content">
@@ -397,5 +372,8 @@
         </div>
     </div>
 </footer>
+<script src="scripts/jquery-3.3.1.js"></script>
+<script src="scripts/Cart.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

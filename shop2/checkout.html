@@ -48,42 +48,14 @@
         <div class="header_right">
 
             <div class="img_cart_link"><img class="img_cart" src="img/cart.svg" alt="photo">
+                <div class="img_cart_link__quantity"></div>
                 <div class="cart-box">
-                    <div class="cart-box-item">
-                        <div class="cart-box-item__img">
-                            <img src="img/drop_cart-1.jpg" alt="foto">
-                        </div>
-                        <div class="cart-box-item__text">
-                            <a href="single_page.html" class="cart-box-item__text_name">Rebox Zane</a>
-                            <p class="cart-box-item__text_star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </p>
-                            <p class="cart-box-item__text_price">1  x   $250</p>
-                        </div>
-                        <div class="cart-box-item__cancel"><a href="#" class="fa fa-times-circle" aria-hidden="true"></a></div>
+                    <div class="cart-box-items">
                     </div>
-                    <div class="cart-box-item">
-                        <div class="cart-box-item__img">
-                            <img src="img/drop_cart-2.jpg" alt="foto">
-                        </div>
-                        <div class="cart-box-item__text">
-                            <a href="single_page.html" class="cart-box-item__text_name">Rebox Zane</a>
-                            <p class="cart-box-item__text_star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </p>
-                            <p class="cart-box-item__text_price">1  x   $250</p>
-                        </div>
-                        <div class="cart-box-item__cancel"><a href="#" class="fa fa-times-circle" aria-hidden="true"></a></div>
+                    <div class="cart-box-item__total">
+                        <div class="cart-box-item__total_name">Total</div>
+                        <div class="cart-box-item__total_amount">$500</div>
                     </div>
-                    <div class="total"></div>
                     <a href="checkout.html" class="button cart-box__button cart-box__button_pink ">Checkout</a>
                     <a href="shopping_cart.html" class="cart_button cart-box__button">Go to cart</a>
                 </div>
@@ -245,22 +217,223 @@
     </div>
     <div class="checkout-menu__elem">
         <a href="#" class="checkout-menu__item">02. &nbsp;  BILLING INFORMATION</a>
+        <div class="checkout-menu__content">
+            <div class="checkout-menu__guest">
+                <h5 class="checkout-menu_h5">Check as a guest or register</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <form action="#" class="checkout-menu__radio">
+                    <label>
+                        <input type="radio" name="radio">checkout as guest
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">register
+                    </label>
+                </form>
+                <h5 class="checkout-menu_h5">register and save time!</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <div class="checkout-menu__links">
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Fast and easy checkout</a>
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Easy access to your order history and status</a>
+                </div>
+                <a href="#" class="cart_button checkout-menu__button">Continue</a>
+
+            </div>
+            <div class="checkout-menu__already">
+                <h5 class="checkout-menu_h5">Already registed?</h5>
+                <p class="checkout-menu_p">Please log in below</p>
+                <form action="#" class="checkout-menu__form checkout-menu__already_form">
+                    <label>
+                        <span class="checkout-menu_h6">EMAIL ADDRESS<span class="star_red">*</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span class="checkout-menu_h6">PASSWORD <span class="star_red">*</span></span>
+                        <input type="password" name="pass" required>
+                    </label>
+                </form>
+                <p class="checkout-menu_p_red">* Required Fileds</p>
+                <div class="checkout-menu__login">
+                    <a href="#" class="cart_button checkout-menu__button">Log in</a>
+                    <a href="#" class="checkout-menu__forgot">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="checkout-menu__elem">
         <a href="#" class="checkout-menu__item">03. &nbsp; SHIPPING INFORMATION</a>
+        <div class="checkout-menu__content">
+            <div class="checkout-menu__guest">
+                <h5 class="checkout-menu_h5">Check as a guest or register</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <form action="#" class="checkout-menu__radio">
+                    <label>
+                        <input type="radio" name="radio">checkout as guest
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">register
+                    </label>
+                </form>
+                <h5 class="checkout-menu_h5">register and save time!</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <div class="checkout-menu__links">
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Fast and easy checkout</a>
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Easy access to your order history and status</a>
+                </div>
+                <a href="#" class="cart_button checkout-menu__button">Continue</a>
 
+            </div>
+            <div class="checkout-menu__already">
+                <h5 class="checkout-menu_h5">Already registed?</h5>
+                <p class="checkout-menu_p">Please log in below</p>
+                <form action="#" class="checkout-menu__form checkout-menu__already_form">
+                    <label>
+                        <span class="checkout-menu_h6">EMAIL ADDRESS<span class="star_red">*</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span class="checkout-menu_h6">PASSWORD <span class="star_red">*</span></span>
+                        <input type="password" name="pass" required>
+                    </label>
+                </form>
+                <p class="checkout-menu_p_red">* Required Fileds</p>
+                <div class="checkout-menu__login">
+                    <a href="#" class="cart_button checkout-menu__button">Log in</a>
+                    <a href="#" class="checkout-menu__forgot">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="checkout-menu__elem">
         <a href="#" class="checkout-menu__item">04. &nbsp; SHIPPING METHOD</a>
+        <div class="checkout-menu__content">
+            <div class="checkout-menu__guest">
+                <h5 class="checkout-menu_h5">Check as a guest or register</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <form action="#" class="checkout-menu__radio">
+                    <label>
+                        <input type="radio" name="radio">checkout as guest
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">register
+                    </label>
+                </form>
+                <h5 class="checkout-menu_h5">register and save time!</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <div class="checkout-menu__links">
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Fast and easy checkout</a>
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Easy access to your order history and status</a>
+                </div>
+                <a href="#" class="cart_button checkout-menu__button">Continue</a>
 
+            </div>
+            <div class="checkout-menu__already">
+                <h5 class="checkout-menu_h5">Already registed?</h5>
+                <p class="checkout-menu_p">Please log in below</p>
+                <form action="#" class="checkout-menu__form checkout-menu__already_form">
+                    <label>
+                        <span class="checkout-menu_h6">EMAIL ADDRESS<span class="star_red">*</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span class="checkout-menu_h6">PASSWORD <span class="star_red">*</span></span>
+                        <input type="password" name="pass" required>
+                    </label>
+                </form>
+                <p class="checkout-menu_p_red">* Required Fileds</p>
+                <div class="checkout-menu__login">
+                    <a href="#" class="cart_button checkout-menu__button">Log in</a>
+                    <a href="#" class="checkout-menu__forgot">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="checkout-menu__elem">
         <a href="#" class="checkout-menu__item">05. &nbsp;  PAYMENT METHOD</a>
+        <div class="checkout-menu__content">
+            <div class="checkout-menu__guest">
+                <h5 class="checkout-menu_h5">Check as a guest or register</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <form action="#" class="checkout-menu__radio">
+                    <label>
+                        <input type="radio" name="radio">checkout as guest
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">register
+                    </label>
+                </form>
+                <h5 class="checkout-menu_h5">register and save time!</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <div class="checkout-menu__links">
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Fast and easy checkout</a>
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Easy access to your order history and status</a>
+                </div>
+                <a href="#" class="cart_button checkout-menu__button">Continue</a>
 
+            </div>
+            <div class="checkout-menu__already">
+                <h5 class="checkout-menu_h5">Already registed?</h5>
+                <p class="checkout-menu_p">Please log in below</p>
+                <form action="#" class="checkout-menu__form checkout-menu__already_form">
+                    <label>
+                        <span class="checkout-menu_h6">EMAIL ADDRESS<span class="star_red">*</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span class="checkout-menu_h6">PASSWORD <span class="star_red">*</span></span>
+                        <input type="password" name="pass" required>
+                    </label>
+                </form>
+                <p class="checkout-menu_p_red">* Required Fileds</p>
+                <div class="checkout-menu__login">
+                    <a href="#" class="cart_button checkout-menu__button">Log in</a>
+                    <a href="#" class="checkout-menu__forgot">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="checkout-menu__elem">
         <a href="#" class="checkout-menu__item">06. &nbsp;  ORDER REVIEW</a>
+        <div class="checkout-menu__content">
+            <div class="checkout-menu__guest">
+                <h5 class="checkout-menu_h5">Check as a guest or register</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <form action="#" class="checkout-menu__radio">
+                    <label>
+                        <input type="radio" name="radio">checkout as guest
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">register
+                    </label>
+                </form>
+                <h5 class="checkout-menu_h5">register and save time!</h5>
+                <p class="checkout-menu_p">Register with us for future convenience</p>
+                <div class="checkout-menu__links">
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Fast and easy checkout</a>
+                    <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Easy access to your order history and status</a>
+                </div>
+                <a href="#" class="cart_button checkout-menu__button">Continue</a>
 
+            </div>
+            <div class="checkout-menu__already">
+                <h5 class="checkout-menu_h5">Already registed?</h5>
+                <p class="checkout-menu_p">Please log in below</p>
+                <form action="#" class="checkout-menu__form checkout-menu__already_form">
+                    <label>
+                        <span class="checkout-menu_h6">EMAIL ADDRESS<span class="star_red">*</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span class="checkout-menu_h6">PASSWORD <span class="star_red">*</span></span>
+                        <input type="password" name="pass" required>
+                    </label>
+                </form>
+                <p class="checkout-menu_p_red">* Required Fileds</p>
+                <div class="checkout-menu__login">
+                    <a href="#" class="cart_button checkout-menu__button">Log in</a>
+                    <a href="#" class="checkout-menu__forgot">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -355,5 +528,19 @@
         </div>
     </div>
 </footer>
+<script src="scripts/jquery-3.3.1.js"></script>
+<script src="scripts/Cart.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.checkout-menu__content').css({'display': 'none'});
+        $('.checkout-menu').on('click', '.checkout-menu__elem', e => {
+            event.preventDefault();
+            $('.checkout-menu .checkout-menu__content').not($(e.target).next()).slideUp(500);
+            $(e.target).next().slideToggle(1000);
+        });
+    });
+
+</script>
 </body>
 </html>

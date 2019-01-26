@@ -1,0 +1,805 @@
+
+@import "var"
+@import "mixins"
+
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Lato', sans-serif
+
+.container
+  width: 1140px
+  margin: 0 auto
+
+.header
+  border-bottom: 1px solid #ececec
+  box-sizing: border-box
+  background-color: #ffffff
+  height: 100px
+  width: 100%
+
+.header_flex
+  display: flex
+  justify-content: space-between
+  height: 100%
+  align-items: center
+
+.header_left,
+.header_right
+  display: flex
+  align-items: center
+
+.logo
+  display: flex
+  align-items: center
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  text-decoration: none
+  margin-right: 37px
+
+.header_form
+  display: flex
+
+.logo_img
+  margin-right: 13px
+
+.logo_d
+  color: $pink
+  font-weight: 700
+
+.button
+  height: 38px
+  background-color: $pink
+  padding-left: 19px
+  padding-right: 12px
+  line-height: 38px
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  text-decoration: none
+  border: 2px solid $pink
+
+.button .fa-caret-down
+  margin-left: 8px
+
+.button:hover
+  background-color: #ffffff
+  color: $pink
+
+.img_cart_link
+  position: relative
+  height: 42px
+  display: flex
+  align-items: center
+  &__quantity
+    display: block
+    height: 19px
+    background-color: $pink
+    border-radius: 10px
+    position: relative
+    left: -10px
+    top: -12px
+    color: white
+    font-size: 13px
+    padding-left: 6px
+    padding-right: 8px
+    padding-top: 2px
+
+.img_cart_link:hover .cart-box
+    display: flex
+.cart-box
+  position: absolute
+  top: 43px
+  left: -7px
+  display: none
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  width: 230px
+  border-radius: 5px
+  background-color: #ffffff
+  padding: 0 16px 6px
+  text-transform: uppercase
+  &__button
+    width: 225px
+    height: 50px
+    padding: 0
+    line-height: 50px
+    text-align: center
+    margin-bottom: 10px
+    font-size: 14px
+    font-weight: 700
+    &_pink
+      background-color: white
+      color: $pink
+      &:hover
+        background-color: $pink
+        color: white
+.clear_item
+  padding: 50px 0
+  display: flex
+  justify-content: center
+  border-bottom: 1px solid #ededed
+  color:  #222222
+  font-size: 16px
+  font-weight: 700
+.cart-box-item
+  width: 100%
+  /*border-bottom: 1px solid #ededed
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-bottom: 16px
+  padding-top: 16px
+  &__text
+    margin-left: 14px
+    width: 80%
+    &_name
+      text-decoration: none
+      color: #222222
+      font-size: 12px
+      font-weight: 700
+      margin-bottom: 10px
+    &_star
+      color: #e4af48
+      font-size: 12px
+      font-weight: 400
+      margin-bottom: 12px
+      margin-top: 10px
+    &_price
+      color: $pink
+      font-size: 12px
+      font-weight: 400
+      &_sub
+        display: none
+  &__cancel .fa-times-circle
+    color: #c0c0c0
+    font-size: 16px
+    font-weight: 400
+    text-decoration: none
+    &:hover
+      color: $pink
+  &__total
+    width: 100%
+    display: flex
+    justify-content: space-between
+    color:  #222222
+    font-size: 16px
+    font-weight: 700
+    margin-top: 20px
+    margin-bottom: 35px
+
+.browse
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  border: 1px solid #e6e6e6
+  box-sizing: border-box
+  background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+  width: 87px
+  height: 38px
+  color: #222222
+  font-size: 14px
+  font-weight: 300
+  line-height: 34px
+  text-align: center
+  position: relative
+
+.browse_input,
+.browse_button
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  border: 1px solid #e6e6e6
+  box-sizing: border-box
+  background-color: #ffffff
+  width: 280px
+  height: 38px
+  border-left: none
+
+.browse_input
+  color: #a4a4a4
+  font-size: 14px
+  font-weight: 300
+  line-height: 32px
+  padding-left: 16px
+  padding-right: 16px
+
+.browse .fa-caret-down
+  margin-left: 8px
+  opacity: 0
+
+.browse:hover .fa-caret-down
+  opacity: 1
+.browse:hover .mega_box-browse
+  display: flex
+
+.browse_button
+  width: 37px
+  color: #a4a4a4
+  font-size: 14px
+  font-weight: 400
+  line-height: 32px
+  text-align: center
+
+/*================================================================*/
+/*===========================Меню сайта===========================*/
+.nav_main
+  background-color: #ffffff
+
+.menu
+  list-style-type: none
+  display: flex
+  justify-content: center
+
+.menu_link
+  padding: 20px 15px 17px
+  display: block
+  text-decoration: none
+  color: #222222
+  font-size: 14px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+
+.menu_link_active
+  border-bottom: 3px solid $pink
+  padding-bottom: 14px
+
+.menu_link:hover
+  color: $pink
+
+.mega_box,
+.mega_box-browse
+  position: absolute
+  top: 54px
+  left: -15px
+  border-radius: 5px
+  background-color: #fff
+  border: 1px solid #ececec
+  padding: 20px
+  display: none
+.mega_box-browse
+  z-index: 3
+  top: 36px
+  left: 0
+  flex-direction: column
+  align-items: flex-start
+  & .mega_flex
+    text-align: left
+    margin-right: 0
+
+
+.menu_list
+  position: relative
+
+.menu_list:hover .mega_box
+  display: flex
+
+.mega_flex
+  width: 235px
+  margin-right: 46px
+
+.mega_flex:last-of-type
+  margin-right: 0
+
+.mega_ul
+  list-style-type: none
+
+.mega_link
+  color: #646464
+  font-size: 14px
+  font-weight: 400
+  line-height: 28px
+  text-decoration: none
+
+.mega_link:hover
+  color: $pink
+
+
+.mega_h3
+  border-bottom: 1px solid #e8e8e8
+  color: #232323
+  font-size: 14px
+  font-weight: 700
+  line-height: 32px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+
+/*================================================================*/
+/*========================Баннер с мужиком========================*/
+.banner
+  background-color: #e8e8e8
+  height: 614px
+
+
+.banner_flex
+  height: 100%
+  background: url(../img/banner_back_1.jpg) -195px -51px
+
+.banner_h3
+  color: #222222
+  font-size: 60px
+  font-weight: 900
+  line-height: 45px
+
+
+.banner_h4
+  color: #222222
+  font-size: 40px
+  font-weight: 900
+  line-height: 32px
+  margin-top: 20px
+
+
+.banner_text_1
+  margin-top: 224px
+  float: left
+  border-left: 12px solid $pink
+  padding-left: 12px
+  text-decoration: none
+  &:hover
+    transform: scale(1.07,1.07)
+
+/*================================================================*/
+/*============================Block_one===========================*/
+.block_one
+  height: 823px
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  justify-content: space-between
+  align-content: space-between
+  margin-top: 100px
+
+
+.b1_elem_big
+  height: 542px
+  width: 560px
+  align-self: flex-start
+  &:hover
+    transform: scale(1.07,1.07)
+
+
+.b1_elem_small
+  height: 261px
+  width: 560px
+  &:hover
+    transform: scale(1.07,1.07)
+
+
+.label_elem
+  float: left
+  padding: 20px 16px
+  margin-top: 26px
+  background-color: #ffffff
+  text-align: center
+
+
+.label_elem_h6
+  color: #222222
+  font-size: 18px
+  font-weight: 900
+  text-align: left
+  line-height: 16px
+  margin-bottom: 15px
+  text-transform: uppercase
+
+
+.label_elem_h5
+  color: $pink
+  font-size: 30px
+  font-weight: 900
+  text-align: left
+  line-height: 23px
+  text-transform: uppercase
+
+
+/*================================================================*/
+/*============================Block_two===========================*/
+.block_two
+  margin-top: 100px
+
+
+.head_block_two_text
+  margin-bottom: 60px
+
+
+.head_block_two_text_h3
+  color: #222222
+  font-size: 30px
+  font-weight: 700
+  line-height: 30px
+  text-align: center
+  margin-bottom: 16px
+
+
+.head_block_two_text_p
+  color: #9f9f9f
+  font-size: 14px
+  font-weight: 400
+  line-height: 14px
+  text-align: center
+
+
+.block_two_content
+  height: 770px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-content: space-between
+
+
+
+
+.img_cart_white
+  margin-right: 15px
+
+
+.txt_b2e
+  padding-top: 20px
+  padding-left: 14px
+
+
+.label_b2e
+  color: #222222
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  margin-bottom: 17px
+  line-height: 13px
+  text-decoration: none
+
+
+.price_b2e
+  color: $pink
+  font-size: 16px
+  font-weight: 700
+  line-height: 15px
+
+
+.clr_up_b2
+  display: flex
+  justify-content: center
+  margin-top: 55px
+  margin-bottom: 115px
+
+
+.clr_up_b2 .fa-long-arrow-right
+  margin-left: 9px
+
+
+
+/*================================================================*/
+/*============================Banner_two==========================*/
+.banner_2
+  height: 529px
+  margin-bottom: 100px
+  display: flex
+
+
+.img_banner_2
+  width: 767px
+  height: 529px
+
+
+.txt_banner_2
+  width: 373px
+  background-color: #222224
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+
+
+.img_banner_2_label
+  float: left
+  padding-left: 40px
+  text-align: left
+
+
+.img_banner_2_label_h2
+  color: #ffffff
+  font-size: 54px
+  font-weight: 700
+  margin-top: 146px
+  line-height: 40px
+  margin-bottom: 15px
+
+
+.img_banner_2_label_h2_pink
+  color: $pink
+
+
+.img_banner_2_label_h3
+  color: #ffffff
+  font-size: 32.17px
+  font-weight: 700
+  text-align: left
+  line-height: 25px
+
+
+.txt_banner_2_element
+  width: 300px
+  height: 105px
+  display: flex
+
+
+.txt_banner_2_block
+  margin-left: 33px
+
+
+.txt_banner_2_element_img
+  float: left
+  align-self: flex-start
+
+
+
+.txt_banner_2_element_h5
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  text-align: left
+  margin-bottom: 10px
+  margin-top: 7px
+
+
+.txt_banner_2_element_p
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  text-align: left
+
+
+/*================================================================*/
+/*============================Block_three=========================*/
+.slider
+
+  height: 438px
+  margin-bottom: 100px
+  background-size: cover
+  background: url(../img/slider.jpg) no-repeat center
+
+.block_three
+  height: 100%
+  display: flex
+
+
+.block_3_left
+  width: 570px
+  height: 100%
+  padding-top: 110px
+
+
+.block_3_right
+  width: 569px
+  height: 100%
+  border-left: 1px solid #e6e6e6
+
+
+.letter
+  display: flex
+  flex-wrap: wrap
+
+
+.letter_foto
+  align-self: flex-start
+
+
+.letter_text
+  width: 386px
+  margin-left: 30px
+
+
+.letter_p
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 16px
+  font-style: italic
+  line-height: 26px
+  text-align: left
+  margin-bottom: 18px
+
+
+.letter_h5
+  color: $pink
+  font-size: 16px
+  font-weight: 700
+  line-height: 20px
+  text-align: left
+
+
+.letter_h6
+  color: #222224
+  font-size: 12px
+  font-weight: 300
+  line-height: 14px
+  text-align: left
+
+
+.dots
+  display: flex
+  width: 140px
+  justify-content: space-between
+
+
+.dot
+  background-color: #d6d6d6
+  width: 38px
+  height: 4px
+  margin-top: 40px
+
+
+.dot_active
+  background-color: $pink
+
+
+.block_3_right
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.sub_h3
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 24px
+  font-weight: 400
+  line-height: 24px
+  margin-bottom: 10px
+
+
+.sub_h4
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  margin-bottom: 35px
+
+
+.subscribe
+  text-align: center
+
+
+.sub_form
+  display: flex
+
+
+.email_sub
+  background-color: #e1e1e1
+  width: 252px
+  height: 50px
+  border: none
+  border-top-left-radius: 30px
+  border-bottom-left-radius: 30px
+  padding-left: 30px
+  padding-right: 30px
+
+
+
+.confirm_sub
+  background-color: $pink
+  width: 104px
+  height: 50px
+  border: none
+  border-top-right-radius: 30px
+  border-bottom-right-radius: 30px
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  line-height: 50px
+  text-align: center
+
+
+/*================================================================*/
+/*============================Pre-footer==========================*/
+.pre_footer_main
+  display: flex
+  padding-right: 43px
+  justify-content: space-between
+
+
+.pre_footer_element_big
+  width: 428px
+  padding-bottom: 10px
+
+
+
+.pre_footer_h4
+  color: $pink
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  text-align: left
+
+
+.pre_footer_p
+  margin-top: 29px
+  color: #898989
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+
+.pre_footer_links
+  margin-top: 45px
+  list-style-type: none
+
+
+.pre_footer_link
+  text-decoration: none
+  color: #898989
+  font-size: 16px
+  font-weight: 400
+  line-height: 43px
+  display: block
+
+
+.pre_footer_link:hover
+  color: $pink
+
+
+/*================================================================*/
+/*==============================Footer============================*/
+.footer
+  margin-top: 90px
+  height: 80px
+  background-color: #e6e6e6
+
+
+.footer_main
+  height: 100%
+  display: flex
+  align-items: center
+
+
+.footer_left
+  width: 570px
+
+
+.footer_p
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+  line-height: 42px
+
+
+.footer_right
+  width: 570px
+
+
+.social_block
+  display: flex
+  float: right
+  justify-content: space-between
+  width: 200px
+
+
+.social
+  height: 32px
+  width: 32px
+  background-color: #ffffff
+  text-align: center
+  line-height: 32px
+  color: #7a7a7a
+
+
+.social:hover
+  background-color: $pink
+  color: #ffffff
+
+
+.social:active
+  color: #7a7a7a
+  background-color: #ffffff
+  opacity: 0.1
+
+@import "product"
+@import "cart"
+@import "single"
+@import "checkout"

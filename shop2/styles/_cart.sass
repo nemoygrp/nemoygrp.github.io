@@ -1,0 +1,188 @@
+
+.cart-content
+  &__name
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #eaeaea
+    width: 100%
+    text-transform: uppercase
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+  &__left
+    padding: 10px
+  &__right
+    width: 600px
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    & li
+      padding: 10px 10px 20px
+      width: 100px
+      text-align: center
+  &__control
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+    &_button
+      margin-top: 45px
+      padding-left: 40px
+      padding-right: 40px
+      height: 50px
+      font-size: 14px
+      font-weight: 700
+      text-align: center
+      line-height: 50px
+
+.cart_button
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  text-transform: uppercase
+  text-decoration: none
+  color: #4a4a4a
+  &:hover
+    color: $pink
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+.item-cart
+  border-bottom: 1px solid #eaeaea
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-bottom: 20px
+  padding-top: 20px
+  &__card
+    display: flex
+    align-items: center
+  &__card-text
+    padding-left: 20px
+  &__card-name
+    font-size: 13px
+    color: #222222
+    font-weight: 400
+    text-transform: uppercase
+    text-decoration: none
+    line-height: 50px
+    &:hover
+      color: $pink
+  &__card-options
+    font-size: 13px
+    color: #575757
+    font-weight: 500
+    line-height: 20px
+  &__card-value
+    font-size: 13px
+    color: #6f6e6e
+    font-weight: 300
+    text-transform: capitalize
+  &__right
+    width: 600px
+    display: flex
+    justify-content: space-around
+    list-style-type: none
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+  &__list
+    padding: 10px
+    width: 100px
+    text-align: center
+    &_action .fa-times-circle
+      font-size: 16px
+      text-decoration: none
+      color: #656565
+      &:hover
+        color: $pink
+    &_input
+      width: 24px
+      height: 30px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      text-align: center
+      padding-left: 10px
+      padding-right: 10px
+      color: #656565
+
+.shipping-content
+  height: 268px
+  padding-bottom: 80px
+  display: flex
+  &__head-right
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+  &__head
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    &_pink
+      color: $pink
+    &_txt
+      color: #000000
+      font-size: 14px
+      font-weight: 300
+  &__item
+    width: $width-site / 3 + 10px
+    display: flex
+    flex-wrap: wrap
+    align-content: space-between
+    &_right
+      height: 65px
+      width: 276px
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      border-bottom: 1px solid #e2e2e2
+      margin-bottom: 17px
+    &_right-txt
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 15px
+    &:last-of-type
+      width: 360px
+      display: flex
+      justify-content: center
+      align-content: center
+    &:nth-of-type(2)
+      flex-direction: column
+      height: 185px
+      align-items: flex-start
+      justify-content: space-between
+  &__input
+    padding-left: 15px
+    padding-right: 15px
+    width: 323px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+  &__price
+    margin-left: 20px
+  &__control_button
+    padding-left: 15px
+    padding-right: 15px
+    height: 35px
+    font-size: 11px
+    font-weight: 700
+    text-align: center
+    line-height: 35px
+    &:hover
+      color: $pink
+    &_big
+      padding-right: 40px
+      padding-left: 40px
+      height: 50px
+      color: #ffffff
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      line-height: 50px

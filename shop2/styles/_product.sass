@@ -1,0 +1,525 @@
+.product
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.content_full_box
+  width: 840px
+  margin-bottom: 110px
+
+
+.sub_menu
+  height: 148px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.page_name
+  color: $pink
+  font-size: 24px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+
+
+.bread_crumbs
+  list-style-type: none
+
+
+.bread_crumbs li
+  float: left
+
+
+.bread_crumbs_border
+  color: #636363
+
+
+.bread_crumbs_element
+  color: #636363
+  font-weight: 500
+  font-size: 14px
+  text-transform: uppercase
+  text-decoration: none
+  &:hover
+    color: $pink
+
+.bread_crumbs_element_active
+  color: $pink
+  font-weight: 700
+  font-size: 14px
+  text-transform: uppercase
+  text-decoration: none
+
+
+
+.menu_product
+  list-style-type: none
+  width: 250px
+  align-self: stretch
+
+
+.name_product_list
+  padding-left: 11px
+  padding-right: 6px
+  display: block
+  height: 37px
+  border-left: 5px solid $pink
+  color: #636363
+  font-size: 14px
+  font-weight: 700
+  line-height: 37px
+  text-transform: uppercase
+  border-bottom: 1px solid #ebebeb
+  margin-top: 20px
+  &:hover
+    color: $pink
+
+
+
+.name_product_list::-webkit-details-marker
+  display: none
+
+
+.name_product_list::after
+  float: right
+  font-family: 'FontAwesome', serif
+  content: "\f0d7"
+
+
+details[open] > .name_product_list::after
+  font-family: 'FontAwesome', serif
+  content: "\f0d8"
+
+
+details[open] > .name_product_list
+  color: $pink
+
+
+
+.menu_product_list
+  list-style-type: none
+  padding-left: 22px
+  padding-top: 8px
+
+
+.menu_product_link
+  text-decoration: none
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 33px
+
+
+.name_content_product
+  width: 280px
+  margin-bottom: 25px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+
+
+.content_product
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+
+.box_content_product_trending
+  width: 176px
+  display: flex
+  flex-wrap: wrap
+
+
+
+.box_content_product_trending_elem,
+.box_content_product_trending_elem a
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  text-decoration: none
+  user-select: none
+  &:hover
+    color: $pink
+
+
+
+.box_content_product_trending_border
+  margin: 0 10px
+  color: #dfdfdf
+
+
+.size_checkbox
+  width: 13px
+  height: 13px
+
+
+.size_label
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+  margin-left: 9px
+  user-select: none
+  &:hover
+    color: $pink
+
+
+.box_content_product_element
+  display: flex
+  align-items: center
+  width: 70px
+
+
+.box_content_product
+  display: flex
+  flex-wrap: wrap
+
+
+input[type=range]
+  -webkit-appearance: none
+  width: 100%
+
+
+input[type=range]:focus
+  outline: none
+
+
+input[type=range]::-webkit-slider-runnable-track
+  width: 100%
+  height: 6px
+  cursor: pointer
+  animate: 0.2s
+  background: #f0f0f0
+  border-radius: 1.3px
+  border: 0.2px solid #010101
+
+
+input[type=range]::-webkit-slider-thumb
+  border: 1px solid $pink
+  height: 14px
+  width: 14px
+  border-radius: 50%
+  background: $pink
+  cursor: pointer
+  -webkit-appearance: none
+  margin-top: -4px
+
+
+input[type=range]:focus::-webkit-slider-runnable-track
+  background: #f0f0f0
+
+
+input[type=range]::-moz-range-track
+  width: 100%
+  height: 6px
+  cursor: pointer
+  animate: 0.2s
+
+  background: #f0f0f0
+  border-radius: 1.3px
+  border: 0.2px solid #010101
+
+
+input[type=range]::-moz-range-thumb
+  border: 1px solid $pink
+  height: 14px
+  width: 14px
+  border-radius: 3px
+  background: $pink
+  cursor: pointer
+
+
+input[type=range]::-ms-track
+  width: 100%
+  height: 6px
+  cursor: pointer
+  animation: 0.2s
+  background: transparent
+  border-color: transparent
+  border-width: 16px 0
+  color: transparent
+
+
+input[type=range]::-ms-fill-lower
+  background: #f0f0f0
+  border: 0.2px solid #010101
+  border-radius: 2.6px
+
+
+input[type=range]::-ms-fill-upper
+  background: #f0f0f0
+  border: 0.2px solid #010101
+  border-radius: 2.6px
+
+
+input[type=range]::-ms-thumb
+
+  border: 1px solid $pink
+  height: 14px
+  width: 14px
+  border-radius: 3px
+  background: $pink
+  cursor: pointer
+
+
+input[type=range]:focus::-ms-fill-lower
+  background: #f0f0f0
+
+
+input[type=range]:focus::-ms-fill-upper
+  background: #f0f0f0
+
+
+.price_range_product_value
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+
+
+.sort
+  display: flex
+
+
+.sort_by,
+.sort_number
+  display: flex
+  margin-top: 50px
+
+.sort_name
+  height: 30px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 30px
+  padding-left: 12px
+  padding-right: 8px
+  border-right: none
+  margin-left: 10px
+
+.sort select
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  padding-left: 12px
+  padding-right: 20px
+
+
+.content_product_elements
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-self: flex-end
+  flex-wrap: wrap
+  margin-top: 60px
+  margin-bottom: 40px
+
+
+.content_product_element
+  width: 263px
+  position: relative
+  margin-bottom: 40px
+
+
+.add-to-cart
+  height: 39px
+  border-radius: 3px
+  border: 1px solid #ffffff
+  text-decoration: none
+  color: #ffffff
+  font-size: 13px
+  font-weight: 700
+  line-height: 39px
+  padding-left: 12px
+  padding-right: 12px
+  display: flex
+  align-items: center
+
+
+.add-to-cart:hover
+  box-shadow: 0 0 5px #ffffff
+
+
+.little_button
+  width: 57px
+  height: 38px
+  font-size: 20px
+  border-radius: 3px
+  border: 1px solid #ffffff
+  color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-left: 4px
+  margin-right: 4px
+  margin-top: 8px
+  text-decoration: none
+
+
+.little_button:hover
+  box-shadow: 0 0 5px #ffffff
+
+
+.parent_add
+  position: absolute
+  top: 98px
+  width: 263px
+  justify-content: center
+  flex-wrap: wrap
+  display: none
+
+
+.parent_add_inside
+  width: 263px
+  display: flex
+  justify-content: center
+
+
+.content_product_element:hover
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+
+.content_product_element:hover .parent_add
+  display: flex
+
+
+.content_product_element:hover .content_product_element_img
+  filter: brightness(55%)
+
+
+.content_product_element_text
+  padding: 20px 15px
+
+
+.content_product_element_img
+  width: 100%
+
+  
+
+
+.content_product_element_name
+  color: #6f6e6e
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  padding-bottom: 15px
+
+
+.content_product_element_price
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+
+.content_product_element_link
+  text-decoration: none
+  display: block
+
+
+
+.content_product_elements_bottom
+  display: flex
+  justify-content: space-between
+
+
+.pagination
+  display: flex
+
+
+.pagination ul
+  list-style-type: none
+
+.pagination li
+  float: left
+  text-decoration: none
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+  padding: 16px
+
+.pagination li:hover .pagination_link
+  color: #ef5b70
+
+
+.pagination_link
+  text-decoration: none
+  color: #c4c4c4
+
+.pagination .active
+  color: #ef5b70
+
+
+.product_button
+  display: inline-block
+  width: 150px
+  height: 44px
+  border-radius: 5px
+  border: 1px solid #ef5b70
+  background-color: #ffffff
+  text-decoration: none
+  color: #ef5b70
+  font-size: 16px
+  font-weight: bold
+  line-height: 44px
+  text-align: center
+
+
+.product_button:hover
+  background-color: #ef5b70
+  color: #ffffff
+
+
+
+.block_delivery
+  background-color: #222224
+  height: 341px
+
+
+.delivery
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+
+
+.txt_delivery_element
+  width: 310px
+  height: 140px
+
+
+.txt_delivery_block
+  height: 140px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  flex-direction: column
+  justify-content: space-between
+
+
+
+.txt_delivery_element_h5
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+
+
+.txt_delivery_element_p
+  text-align: center
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  line-height: 23.95px
+

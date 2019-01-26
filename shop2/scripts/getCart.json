@@ -1,0 +1,34 @@
+{
+  "contents": [
+    {
+      "id_product": 121,
+      "product_name": "MANGO PEOPLE T-SHIRT",
+      "link":"single_page.html",
+      "color": "red",
+      "size": "XXL",
+      "price": 150,
+      "quantity": 1,
+      "img": "img/cart_1.jpg"
+    },
+    {
+      "id_product": 122,
+      "product_name": "BANANA PEOPLE T-SHIRT",
+      "link":"single_page.html",
+      "color": "red",
+      "size": "XXL",
+      "price": 150,
+      "quantity": 1,
+      "img": "img/cart_2.jpg"
+    },
+    {
+      "id_product": 123,
+      "product_name": "watermelon PEOPLE T-SHIRT",
+      "link":"single_page.html",
+      "color": "red",
+      "size": "XXL",
+      "price": 150,
+      "quantity": 1,
+      "img": "img/cart_3.jpg"
+    }
+  ]
+}
