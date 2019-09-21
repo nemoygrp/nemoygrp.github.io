@@ -1,0 +1,536 @@
+body
+  background: url("../img/fon4.jpg")
+  //background-color: #e3dbbe
+  font-family: Geneva, Arial, Helvetica, sans-serif
+.holiday_banner
+  width: 100%
+  height: 200px
+  display: flex
+  justify-content: center
+  align-items: center
+.ne_knopka
+  color: black
+  background: none
+  border: none
+  cursor: pointer
+  text-decoration: none
+.like_form,
+.back_form
+  font-size: 40px
+  padding: 20px
+  &:hover .ne_knopka
+    color: grey
+    transform: scale(1.2,1.2)
+.control
+  display: flex
+  width: 100%
+  justify-content: center
+  background-color: #e3dbbe
+  border-radius: 30px
+  margin-top: 30px
+  padding-top: 30px
+  padding-bottom: 30px
+
+.count_likes
+  display: flex
+  flex-direction: column
+  justify-content: center
+  & span
+    font-size: 20px
+    margin-bottom: 10px
+  & p
+    font-size: 12px
+    margin: 0
+.header
+  display: flex
+  justify-content: space-between
+  border-radius: 30px
+  background-color: #e3dbbe
+  padding: 30px
+  margin-bottom: 80px
+  &_left
+    display: flex
+    justify-content: center
+  &_right
+    display: flex
+    .fa
+      font-size: 30px
+    a
+      text-decoration: none
+      color: black
+      &:hover
+        color: red
+.authentication
+  padding: 30px
+.cart_link
+  padding: 30px
+
+.logo
+  display: block
+  border-radius: 100px
+  background: url("/img/ded.jpg")
+  background-size: contain
+  width: 150px
+  height: 150px
+  &_name
+    color: red
+    font-family: "Comic Sans MS",sans-serif
+    font-size: 21px
+.container
+  width: 1200px
+  margin: 0 auto
+.hello
+  width: 60%
+  padding-right: 15%
+  padding-left: 20%
+h1
+  text-align: center
+p
+  text-align: center
+ul
+  list-style-type: none
+  display: flex
+  li
+    padding: 20px
+  a
+    text-decoration: none
+    color: black
+    &:hover
+      color: red
+.photo_close
+  float: right
+  width: 15px
+  height: 15px
+  position: relative
+  left: 136px
+  opacity: 0
+  text-decoration: none
+  color: gray
+  z-index: 3
+  &:hover
+    color: red
+.block_photo
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+  .photo
+    display: flex
+    flex-direction: column
+    align-content: center
+    padding: 30px
+    cursor: pointer
+
+    &:hover .photo_close
+      opacity: 1
+    &:hover
+      box-shadow: 9px 13px 7px 0px #6A6F66
+      transform: scale(1.1,1.1)
+      outline: 1px solid #6A6F66
+      background-color: #e3dbbe
+
+
+.info
+  display: flex
+  justify-content: center
+.block_catalog
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+  .catalog_elem
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #e3dbbe
+    max-width: 200px
+    margin-top: 30px
+    padding: 30px
+    border: 1px solid #6A6F66
+    box-shadow: 9px 13px 7px 0px #6A6F66
+    &:hover .name_goods
+      color: #870D04
+    &:hover .photo_catalog
+      transform: scale(1.1,1.1)
+    a
+      padding-top: 20px
+      text-decoration: none
+      color: black
+      font-size: 28px
+.alone_image
+  max-width: 80%
+.goods_block
+  padding: 60px
+  display: flex
+  justify-content: space-evenly
+  & h3
+    font-size: 30px
+  & span
+    color: red
+  & button
+    width: 230px
+    height: 120px
+    font-size: 50px
+    border-radius: 30px
+    box-shadow: -4px 1px 20px 0px #6A6F66
+    &:hover
+      color: red
+
+.cardGoods
+  display: flex
+  flex-direction: column
+  align-items: start
+  justify-content: center
+.alone_goods
+  max-width: 450px
+  border: 1px solid #6A6F66
+  box-shadow: 16px 13px 20px 2px #6A6F66
+
+footer
+  background-color: #e3dbbe
+  display: flex
+  justify-content: center
+  margin-top: 100px
+  height: 40px
+  align-items: center
+  border-radius: 20px
+.comment_block
+  display: flex
+  flex-direction: column
+  align-items: center
+.feedback_elem
+  margin-top: 20px
+  min-height: 30px
+  width: 100%
+  border: 1px solid #6A6F66
+  border-radius: 20px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+
+#nameComment,
+#textComment,
+#main_button
+  margin-top: 10px
+  border-radius: 20px
+  padding-left: 10px
+  padding-right: 10px
+  background-color: #e3dbbe
+.login_input,
+.pass_input,
+.input_text
+  padding-left: 10px
+  padding-right: 10px
+  border-radius: 10px
+  height: 20px
+  background-color: #e3d9cf
+.logout_input
+  font-size: 12px
+  margin-left: 10px
+  opacity: 0
+.name_user
+  &:hover .logout_input
+    opacity: 1
+.content_block,
+.goods_block
+  background-color: #e3dbbe
+  border-radius: 30px
+  padding: 30px
+//------------------------------------- Мини корзина
+.cart_link
+  position: relative
+.mini_cart
+  width: 300px
+  min-height: 200px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  position: absolute
+  left: -130px
+  top: 65px
+  border-radius: 30px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+  z-index: 3
+  &_elem
+    display: flex
+    justify-content: space-around
+    padding: 10px
+    position: relative
+    &__delete
+      color: white
+      opacity: 0
+      position: absolute
+      left: 53px
+      top: 35px
+      &:hover
+        color: red
+        cursor: pointer
+    &:hover .mini_cart_elem__photo
+      filter: brightness(40%)
+    &:hover .mini_cart_elem__delete
+        opacity: 1
+    &__name
+      width: 90px
+      font-size: 14px
+    &__foto_head
+      width: 100px
+      font-size: 12px
+    &__head
+      font-size: 12px
+#rubles
+  font-size: 12px
+#open_mini_cart
+  &:hover
+    color: red
+    cursor: pointer
+.mini_cart_summ
+  display: flex
+  justify-content: flex-end
+  padding-right: 20px
+.link_to_cart
+  padding-left: 20px
+  margin-bottom: 20px
+//------------------------------------- Большая корзина
+.cart_elem
+  margin: 40px auto
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 70%
+  padding: 20px
+  border-radius: 30px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+  &__name
+    width: 250px
+  &__foto_head
+    width: 180px
+  &__name_head
+    width: 250px
+  &__delete
+    cursor: pointer
+
+.cart_summ
+  display: flex
+  justify-content: flex-end
+  font-size: 28px
+  padding-left: 40px
+
+  //---------------------------------Регистрация
+.input_text
+  width: 260px
+.register_link
+  font-size: 14px
+.register_block
+  width: 60%
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+.input_button
+  position: relative
+  width: 220px
+  height: 40px
+  text-align: center
+  color: #FFF
+  text-decoration: none
+  line-height: 43px
+  display: block
+  margin: 30px
+  text-shadow: -1px -1px 0 #2C7982
+  background: #3EACBA
+  border: 1px solid #379AA4
+  background-image: -webkit-linear-gradient(top, #48C6D4, #3EACBA)
+  background-image: -moz-linear-gradient(top, #48C6D4, #3EACBA)
+  background-image: -ms-linear-gradient(top, #48C6D4, #3EACBA)
+  background-image: -o-linear-gradient(top, #48C6D4, #3EACBA)
+  background-image: linear-gradient(top, #48C6D4, #3EACBA)
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5)
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5)
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5)
+  &:before
+    background: #f0f0f0 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0))
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF
+    position: absolute
+    content: ""
+    left: -6px
+    right: -6px
+    top: -6px
+    bottom: -10px
+    z-index: -1
+  &:active
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset
+    top: 5px
+  &:active:before
+    top: -11px
+    bottom: -5px
+    content: ""
+  &:hover
+    background: #48C6D4
+    background-image: -webkit-linear-gradient(top, #3EACBA, #48C6D4)
+    background-image: -moz-linear-gradient(top, #3EACBA, #48C6D4)
+    background-image: -ms-linear-gradient(top, #3EACBA, #48C6D4)
+    background-image: -o-linear-gradient(top, #3EACBA, #48C6D4)
+    background-image: linear-gradient(top, #3EACBA, #48C6D4)
+//------------------------------------Оформить заказ
+.go_to_orders
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 20px
+  padding-top: 20px
+  padding-bottom: 20px
+  border-radius: 30px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+  cursor: pointer
+  &_button:hover
+    color: red
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 30px
+    & .register_phone
+      width: 270px
+      height: 50px
+      font-size: 30px
+      padding-left: 10px
+      padding-right: 10px
+      border-radius: 10px
+      background-color: #e3d9cf
+    & .register_phone_submit
+      height: 50px
+      width: 50px
+      padding-left: 10px
+      padding-right: 10px
+      border-radius: 10px
+      background-color: #beb4aa
+      margin-left: 20px
+      font-size: 30px
+      cursor: pointer
+.cart_input_block
+  display: flex
+  align-items: center
+.description_cart
+  display: flex
+//----------------------------Orders
+.order_elem
+  display: flex
+  flex-direction: column
+  padding: 40px
+  border-radius: 50px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+  margin-bottom: 40px
+  &_head
+    display: flex
+    justify-content: space-around
+    &__number,
+    &__date,
+    &__name,
+    &__phone
+      width: 25%
+      height: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+.order_elem_body
+  display: flex
+.order_elem_control
+  width: 60%
+  height: 200px
+  display: flex
+  flex-wrap: wrap
+.order_elem_content
+  display: flex
+  flex-direction: column
+  width: 100%
+.order_elem_content_goods
+  display: flex
+  font-size: 12px
+  &__name,
+  &__quant,
+  &__price,
+  &__summ
+    width: 10%
+  &__number
+    width: 5%
+.status_order
+  display: flex
+  justify-content: center
+  padding: 20px
+  border-radius: 50px
+  font-size: 20px
+  margin-bottom: 30px
+.description_order
+  margin-top: 30px
+  font-size: 16px
+
+.button_status
+  cursor: pointer
+  border-radius: 50px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  font-size: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 40%
+  height: 60px
+  margin: 10px
+  &:hover
+    transform: scale(1.1,1.1)
+
+.button_status_confirm
+  background-color: lightgreen
+.button_status_ended
+  background-color: lightcoral
+.button_status_shipping
+  background-color: lightseagreen
+.button_status_success
+  background-color: lightgrey
+//---------------------------------------------Админка
+.admin_block_head
+  display: flex
+  justify-content: center
+  height: 150px
+  padding: 30px
+  border-radius: 50px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+.admin_block_title
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  border-radius: 50px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+  height: 40px
+  padding: 30px
+  margin-top: 40px
+.admin_block_content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 40px auto
+  padding: 30px
+  width: 80%
+  border-radius: 50px
+  box-shadow: -4px 1px 20px 0px #6A6F66
+  background-color: #e3dbbe
+  & td
+    padding: 8px
+    min-width: 30px
+    border: 1px solid black
+.add_elem_admin-panel
+  width: 30px
+  height: 30px
