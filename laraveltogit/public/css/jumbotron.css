@@ -1,0 +1,42 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+.vacation_list_block{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.vacation_list_elem{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #ADADAD solid;
+  -webkit-box-shadow: 1px 3px 5px 1px #ADADAD;
+  box-shadow: 1px 3px 3px 1px #ADADAD;
+}
+.button_edit{
+  position: relative;
+}
+.form{
+  display: flex;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.form-group{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.buttons_control{
+  display: flex;
+}
+.btn_del,.btn_edit{
+  margin: 2px;
+}
